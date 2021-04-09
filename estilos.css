@@ -97,6 +97,7 @@ ul{
     align-items: center;
     
 }
+
 .imagenes{
     
     width: 100vw;
@@ -149,7 +150,7 @@ footer{
     }
 }
 .contenedor-nosotros-main{
-    padding-top: 6em;
+    padding-top: 3em;
 
 }
 .contenedor-nosotros-main h1{
@@ -202,8 +203,8 @@ footer{
     }
 }
 .contenedor-galeria img{
-    width: 80%;
-    
+    width: 60%;
+    height: 60%;
     max-width: 400px;
     margin: 0 auto;
     border: 1px solid white;
@@ -213,7 +214,7 @@ footer{
       
 }
 .contenedor-galeria-main{
-    padding-top: 6em;
+    padding-top: 3em;
     
 }
 .contenedor-galeria-main h1{
@@ -305,7 +306,7 @@ footer{
         
 }
 .contenedor-formulario-main{
-    padding-top: 6em;
+    padding-top: 3em;
 }
 .contenedor-formulario-main h1{
     margin: 0 auto;
@@ -381,8 +382,11 @@ form  input {
         padding-top: 10em;
     }
 }
-@media (max-width:600px){
+@media (max-width:300px){
     .cabecera{
         display: none;
     }
+}
+.contenedor-carta-main{
+    padding-top: 3em;
 }
