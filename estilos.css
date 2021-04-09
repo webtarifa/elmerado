@@ -18,6 +18,11 @@ header{
     display: none; 
     
 }
+.logomercado{
+    position: absolute;
+    text-align: center;
+    display:none;
+}
 header label{
     display: none;
     height: auto;
@@ -51,18 +56,18 @@ ul{
 }
 .cabecera{
     width: 100%;
-    height: auto;
+    height: 50px;
     background-color: #232323;
     display: flex;
     justify-content: center;
     text-align: center;
     
 }
-.cabecera img{
+/* .cabecera img{
     width: 20%;
     
     min-width: 90px;  
-}
+} */
 
 @media (max-width:768px){
     header label{
@@ -382,10 +387,13 @@ form  input {
         padding-top: 10em;
     }
 }
-@media (max-width:300px){
-    .cabecera{
-        display: none;
+@media (max-width:600px){
+    .cabecera img{
+        /* display: none; */
     }
+   /*  .logomercado{
+        display: block;
+    } */
 }
 .contenedor-carta-main{
     padding-top: 3em;
