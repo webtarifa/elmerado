@@ -391,9 +391,9 @@ form  input {
     .cabecera img{
         /* display: none; */
     }
-   /*  .logomercado{
+  .logomercado{
         display: block;
-    } */
+    } 
 }
 .contenedor-carta-main{
     padding-top: 3em;
