@@ -6,11 +6,12 @@
 body{
     margin: 0;
     font-family: sans-serif;
+    
 }
 header{
     width: 100%;
     background: crimson;
-    position: fixed; 
+    position: fixed;  
 }
 #btn-menu{
     display: none; 
@@ -53,26 +54,22 @@ ul{
     background-color: #232323;
     display: flex;
     justify-content: center;
+    text-align: center;
     
 }
 .cabecera img{
-    width: 30%;
+    width: 20%;
     height: auto;
+    min-width: 200px;  
+}
+
+@media (max-width:768px){
+    header label{
+        display:block;
+    }
     
     
 
-}
-@media (max-width:768px){
-    header label{
-        display: block;
-    }
-    .cabecera img{
-        position: absolute;
-        border-radius: .5em;
-        
-    }
-    
-    }
     .menu{
         position: absolute;
         background: crimson;
@@ -84,7 +81,8 @@ ul{
         flex-direction: column;  
     }
     .menu li{
-        border-top: 1px solid white;
+        border-top: 1px solid white; 
+        border-right: none;
     }
     #btn-menu:checked ~ .menu{
         margin: 0;
@@ -99,7 +97,7 @@ ul{
     
 }
 .imagenes{
-    margin-top: 8em;
+    
     width: 100vw;
     max-width: 900px;
     
@@ -149,11 +147,18 @@ footer{
         flex-direction: column;
     }
 }
-main{
-    
+.contenedor-nosotros-main{
+    padding-top: 6em;
+
+}
+.contenedor-nosotros-main h1{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    color: crimson;
 }
 .contenedor-nosotros{
-    padding-top: 10em;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,20 +173,18 @@ main{
     box-shadow: 1px 2px 8px;
     
 }
+
 .contenedor-nosotros p{
     width: 80%;
     max-width: 600px;
-    text-align: justify;
-    padding: 1em;
-    line-height: 20px;
-    
-}
-h1{
-    
-    color: crimson;
     text-align: center;
     padding: 1em;
+    line-height: 20px;
+    color: black;
+    
 }
+
+
 @media (min-width: 768px){
     .contenedor-nosotros{
         display: flex;
@@ -198,24 +201,168 @@ h1{
     }
 }
 .contenedor-galeria img{
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    height: ;
+    max-width: 400px;
     margin: 0 auto;
     border: 1px solid white;
     border-radius: 1.5em;
     box-shadow: 1px 2px 8px;
     margin-bottom: 1em;
+      
+}
+.contenedor-galeria-main{
+    padding-top: 6em;
     
 }
+.contenedor-galeria-main h1{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    color: crimson;
+}
 .contenedor-galeria{
+    
+    width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: em;
+}
+.contenedor-galeria h1{
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+    margin: 0 auto;
+    color: crimson;
 }
 .contenedor-inicio{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-.contenedor-inicio img{
     width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url(/img/mercado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+     
+}
+@media (min-width:768px){
+    .contenedor-inicio{
+        padding-top: 25em;
+        
+    }
+    
+}
+@media (max-width:768px){
+    .contenedor-inicio{
+        padding-top: 15em; 
+    }
+    
+    
+}
+
+.contenedor-inicio h1{
+    color: crimson;
+    font-size: 3em;
+    text-align: center;
+    padding: .5em;
+}
+.contenedor-inicio h2{
+    color: white;
+    text-align: center;
+}
+.contenedor-carta-main{
+    padding-top: 6em;
+
+    
+    
+}
+@media (max-width:768px){
+
+    .contenedor-inicio h1{
+        color: crimson;
+        font-size: 1.7em;
+        text-align: center;
+        padding: .5em;
+        z-index: -1;
+    }
+    .contenedor-inicio h2{
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+        text-align: center;
+        padding: .5em;
+        z-index: -1;
+    }       
+ }
+.contenedor-carta-main h1{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    color: crimson;
+        
+}
+.contenedor-formulario-main{
+    padding-top: 6em;
+}
+.contenedor-formulario-main h1{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    color: crimson;
+        
+}
+.contenedor-formulario{
+    padding-bottom: 2em;
+}
+.contenedor-formulario form{
+    padding: 2em;
+}
+.contenedor-formulario h2{
+    
+    padding-bottom: 1em;
+    color: crimson;
+    
+}
+form  input {
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color:crimson;
+    
+}
+.botones input {
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color:crimson;
+    
+}
+@media(min-width:768px){
+    .contenedor-formulario{
+        width: 60%;
+     margin: 0 auto ;
+     text-align: center;
+        
+    }
+    form{
+        text-align: left;
+        margin-left: 6em;
+
+    }
+    
+    .contenedor-formulario-main{
+        padding-top: 10em;
+    }
+    .contenedor-nosotros-main{
+        padding-top: 10em;
+    }
+    .contenedor-galeria-main{
+        padding-top: 10em;
+    }
+    .contenedor-carta-main{
+        padding-top: 10em;
+    }
 }
