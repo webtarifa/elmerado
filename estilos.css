@@ -12,6 +12,7 @@ header{
     width: 100%;
     background: crimson;
     position: fixed;  
+    
 }
 #btn-menu{
     display: none; 
@@ -60,7 +61,7 @@ ul{
 .cabecera img{
     width: 20%;
     
-    min-width: 200px;  
+    min-width: 90px;  
 }
 
 @media (max-width:768px){
@@ -201,8 +202,8 @@ footer{
     }
 }
 .contenedor-galeria img{
-    width: 100%;
-    height: ;
+    width: 80%;
+    
     max-width: 400px;
     margin: 0 auto;
     border: 1px solid white;
@@ -241,8 +242,10 @@ footer{
     height: 800px;
     margin: 0 auto;
     background-image: url(img/mercado.png);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
     
      
 }
@@ -284,14 +287,14 @@ footer{
         font-size: 1.7em;
         text-align: center;
         padding: .5em;
-        z-index: -1;
+        
     }
     .contenedor-inicio h2{
         color: rgb(255, 255, 255);
         font-size: 1em;
         text-align: center;
         padding: .5em;
-        z-index: -1;
+        
     }       
  }
 .contenedor-carta-main h1{
@@ -361,6 +364,18 @@ form  input {
     }
     .contenedor-galeria-main{
         padding-top: 10em;
+        
+    }
+    .contenedor-galeria{
+        width: 80%;
+        max-width: 800px;
+    }
+    .contenedor-galeria img{
+        width: 200px;
+        height: auto;
+        margin: 1em ;
+        text-align: center;
+        
     }
     .contenedor-carta-main{
         padding-top: 10em;
