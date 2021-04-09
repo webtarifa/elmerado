@@ -381,3 +381,8 @@ form  input {
         padding-top: 10em;
     }
 }
+@media (max-width:400px){
+    .cabecera{
+        display: none;
+    }
+}
