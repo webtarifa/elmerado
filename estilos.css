@@ -602,3 +602,9 @@ p{
         padding-top: 120px;
     }
 }
+@media(max-width:400px){
+    .carta-fotos{
+        width: 100%;
+        height: auto;
+    }
+}
