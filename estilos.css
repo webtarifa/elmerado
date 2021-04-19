@@ -56,6 +56,8 @@ header{
     display: none;
     
     
+    
+    
 }
 
 
@@ -117,7 +119,8 @@ ul{
         border-right: none;
     }
     #btn-menu:checked ~ .menu{
-        margin: 0;
+        margin: 0 auto;
+        
 
     }
 }
@@ -147,7 +150,7 @@ footer{
     display: flex;
     width: 90%;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 0 auto;
     
     padding-bottom: 50px;
     padding-top: 50px;
@@ -323,14 +326,14 @@ footer{
 
     .contenedor-inicio h1{
         color: crimson;
-        font-size: 1.7em;
+        font-size: 2em;
         text-align: center;
         padding: .5em;
         
     }
     .contenedor-inicio h2{
         color: rgb(255, 255, 255);
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: center;
         padding: .5em;
         
@@ -587,4 +590,15 @@ p{
 }
 .corousel{
     padding-top: 300px;
+}
+.carta{
+    padding-top: 200px;
+    display: flex;
+    color: rgb(245, 3, 3);
+    text-align: center;   
+}
+@media(max-width:400px){
+    .carta{
+        padding-top: 120px;
+    }
 }
