@@ -286,7 +286,7 @@ footer{
     width: 100%;
     height: 1500px;
     margin: 0 auto;
-    background-image: url(img/portadaMercado.png);
+    background-image: url(../img/portadaMercado.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -602,7 +602,7 @@ p{
 @media (max-width:400px){
     .contenedor-inicio{
         padding-top: 15em; 
-        background-image: url(img/portadaMercadoMovil.png);
+        background-image: url(../img/portadaMercadoMovil.png);
         width: 100%;
         height: 900px;
     }
