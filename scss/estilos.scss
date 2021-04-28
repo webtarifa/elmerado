@@ -6,6 +6,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: white;
 }
 
 .fondo-logo {
@@ -290,6 +291,7 @@ footer {
 @media (min-width: 768px) {
   .contenedor-inicio {
     padding-top: 14em;
+    max-width: 80%;
   }
 } 
 
@@ -367,6 +369,7 @@ form input {
     width: 60%;
     margin: 0 auto;
     text-align: center;
+    
   }
 }
   form {
@@ -380,10 +383,24 @@ form input {
   .contenedor-nosotros-main {
     padding-top: 10em;
   }
+  .contenedor-carousel{
+    
+    width: 80%;
+    margin: 150px auto;
+  }
+  .fondo-carousel{
+    width: 100%;
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   @media(max-width:768px){
     .contenedor-nosotros-main{
-      padding-top: 70px;
-    
+      padding-top: 70px;}
+      .contenedor-carousel{
+        width: 100%;
+        margin: auto;
+      
     
     } 
   }
@@ -409,8 +426,10 @@ form input {
   padding-top: 3em;
 }
 .nuestra-especialidad {
+  width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: white;
 }
 
 .contenido-textos {
@@ -561,7 +580,17 @@ p {
     height: 900px;
   }
 }
-
+.contenedor-inicio {
+  width: 100%;
+  height: 1500px;
+  margin: 0 auto;
+  background-image: url(../img/portadaMercado.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 14rem;
+  z-index: -1;
+}
 @media(max-width:768px){ 
   .logotipomercado{
     margin-left: auto;
@@ -592,17 +621,7 @@ p {
      padding-bottom: 20px;
   }
 }
-.contenedor-inicio {
-  width: 100%;
-  height: 1500px;
-  margin: 0 auto;
-  background-image: url(../img/portadaMercado.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-padding-top: 14rem;
-  z-index: -1;
-}
+
 .redessociales__subtitulo{
   
   font-size: 1.5rem;
@@ -628,6 +647,7 @@ padding-top: 14rem;
   text-align: center;
   margin:20px 0 15px 0;
   font-weight: 300;
+  color: black;
 }
 
 .linea{
