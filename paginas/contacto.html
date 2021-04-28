@@ -53,50 +53,80 @@
     </header>
 
     <main class="contenedor-formulario-main">
-        <h1 class="titulos-cabecera">Contacto</h1>
+        <h1 class=>Contacto</h1>
+        <div class="linea"></div>
         
-        <div class="contenedor-formulario">
+        <div class="container- fluid contenedor-formulario">
             
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.281024583754!2d-5.606862584381791!3d36.01343031928795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c8ef7f3fb0c9d%3A0x65592a80e3d1db93!2sBar%20El%20Mercado!5e0!3m2!1ses!2ses!4v1617961967187!5m2!1ses!2ses" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <form>
-                   <h2>Formulario de contacto</h2>
-                   <div>
-                       <label for="nombre">Nombre</label>
-                       <input type="text" placeholder="Ej: Juan" id="nombre">  
-                   </div>
-                   <div>
-                       <label for="apellidos">Apellido</label>
-                       <input type="apellidos" placeholder="Ej: Ortiz Serra" id="apellidos">  
-                   </div>
-                   <div>
-                       <label for="email">Email</label>
-                       <input type="email" placeholder="Ej: webtarifa@gmail.com" id="email">  
-                   </div>
-                   <br>
-                   <br>
-                 
-                   <div>
-                       <label for="consulta">Ingrese su Consulta</label><br><br>
-                       <textarea name="consulta" placeholder="Ej: escriba aqui su consulta" id="consulta" cols="30" rows="5"></textarea>
-                   </div>
-               
-                   <div class="terminos">
-                       <div class="terminos__aceptar">
-                       <label  for="terminos">Aceptas términos y condiciones</label>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.281024583754!2d-5.606862584381791!3d36.01343031928795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c8ef7f3fb0c9d%3A0x65592a80e3d1db93!2sBar%20El%20Mercado!5e0!3m2!1ses!2ses!4v1617961967187!5m2!1ses!2ses" width="100%" height="auto" style="border:1px solid ;" allowfullscreen="" loading="lazy"></iframe>
+        </div>  
+        
+            <div class="container">
+                <h2>Formulario de contacto</h2>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                      <label for="validationCustom01" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustom02" class="form-label">apellidos</label>
+                      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustomUsername" class="form-label">Email</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Por favor un nombre.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationCustom03" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationCustom04" class="form-label">Pais</label>
+                      <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    
+                    </div>
+                    <div class=" container col-md12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Aceptar los terminos y condiciones
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" container col-md12">
+                      <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
+            
                 
-                       <input  type="checkbox" name="terminos" value="1">
-                   </div>
-                   
-                   
-                   <div class="botones">
-                       <div class="reset">
-                           <input type="reset" name="" id="">
-                       
-                           <input type="submit" name="" id="">
-                       </div>
-                   </div>
-               
-               </form>
+        </div>
+            
            </div>
        </div>
     </main>
