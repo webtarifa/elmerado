@@ -178,7 +178,7 @@ footer {
 }
 
 .fondo img {
-  width: 100vh;
+  width: 100%;
 }
 
 .content-foo {
@@ -212,6 +212,22 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .redessociales img {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 768px) {
+  .redessociales h2 {
+    color: yellow;
+    width: 100%;
+    height: 60px;
+    height: auto;
+    background-color: yellow;
   }
 }
 
@@ -282,10 +298,11 @@ footer {
 }
 
 .contenedor-galeria img {
-  width: 100%;
+  width: 50%;
   height: auto;
   max-width: 400px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 1.5em;
   -webkit-box-shadow: 1px 2px 8px;
           box-shadow: 1px 2px 8px;
@@ -293,14 +310,23 @@ footer {
 }
 
 .contenedor-galeria-main {
-  padding-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (max-width: 768px) {
-  .contenedor-galeria-main {
-    padding-top: 0;
-  }
+@media (min-width: 768px) {
   .contenedor-galeria-main h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 0 auto;
     text-align: center;
     padding-top: 0px;
@@ -322,25 +348,15 @@ footer {
     margin: 0 auto;
     color: crimson;
   }
-  .contenedor-inicio {
-    width: 100%;
-    height: 1500px;
-    margin: 0 auto;
-    background-image: url(../img/portadaMercado.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
 }
 
-@media (max-width: 768px) and (min-width: 768px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .contenedor-inicio {
     padding-top: 14em;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .contenedor-inicio h1 {
     color: crimson;
     font-size: 4em;
@@ -358,7 +374,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 768px) {
   .contenedor-inicio h1 {
     color: crimson;
     font-size: 2em;
@@ -373,7 +389,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .contenedor-carta-main h1 {
     margin: 0 auto;
     text-align: center;
@@ -416,7 +432,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) and (min-width: 768px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .contenedor-formulario {
     width: 60%;
     margin: 0 auto;
@@ -424,7 +440,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   form {
     text-align: left;
     margin-left: 6em;
@@ -437,13 +453,13 @@ footer {
   }
 }
 
-@media (max-width: 768px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 768px) {
   .contenedor-nosotros-main {
     padding-top: 70px;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .contenedor-galeria-main {
     padding-top: 10em;
   }
@@ -589,19 +605,19 @@ footer {
   }
 }
 
-@media (max-width: 768px) and (min-width: 400px) {
+@media (min-width: 768px) and (min-width: 400px) {
   .calamares {
     width: 900px;
   }
 }
 
-@media (max-width: 768px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 768px) {
   .mapa {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .carousel-h2 {
     text-align: center;
   }
@@ -618,20 +634,14 @@ footer {
   }
 }
 
-@media (max-width: 768px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 768px) {
   .carta {
     padding-top: 120px;
   }
-}
-
-@media (max-width: 768px) and (max-width: 768px) {
   .carta-fotos {
     width: 100%;
     height: auto;
   }
-}
-
-@media (max-width: 768px) and (max-width: 768px) {
   .contenedor-inicio {
     padding-top: 15em;
     background-image: url(../img/portadaMercadoMovil.png);
@@ -640,7 +650,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 768px) {
   .logotipomercado {
     margin-left: auto;
     margin-right: auto;
@@ -651,19 +661,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) and (min-width: 768px) {
-  .contenedor-galeria {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (max-width: 768px) {
-  .contenedor-galeria img {
-    width: 30%;
-  }
+@media (min-width: 768px) {
   .titulos-cabecera {
     padding-bottom: 60px;
   }
@@ -681,6 +679,136 @@ footer {
     background-color: #232323;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+
+.contenedor-inicio {
+  width: 100%;
+  height: 1500px;
+  margin: 0 auto;
+  background-image: url(../img/portadaMercado.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 14rem;
+  z-index: -1;
+}
+
+.redessociales__subtitulo {
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+.mapa h2 {
+  color: white;
+}
+
+/* Galeria */
+.galeri {
+  font-family: 'open sans';
+}
+
+.galeri h1 {
+  text-align: center;
+  margin: 20px 0 15px 0;
+  font-weight: 300;
+}
+
+.linea {
+  border-top: 5px solid #f50303;
+  margin-bottom: 40px;
+}
+
+.contenedor-imagene {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.contenedor-imagene .image {
+  width: 32%;
+  position: relative;
+  height: auto;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* .overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background:rgba(255, 0, 106, 0.781) ;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: .5s ease;
+} */
+.overlay h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.image:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+
+.galeri {
+  padding-top: 190px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contenedor-imagene {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contenedor-imagene {
+    width: 90%;
+  }
+  .contenedor-imagene .image {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 22px;
+  }
+  .contenedor-imagene {
+    width: 98%;
+  }
+  .contenedor-imagene .image {
+    width: 80%;
+  }
+  .galeri {
+    padding-top: 120px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
