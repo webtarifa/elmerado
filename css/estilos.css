@@ -21,16 +21,8 @@ body {
   max-width: 250px;
 }
 
-@media (max-width: 768px) {
-  .iconos {
-    display: none;
-  }
-  .logo-brand {
-    display: none;
-  }
-  .logotipo {
-    display: block;
-  }
+.logotipo {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -160,8 +152,8 @@ footer {
   margin-top: 50px;
 }
 
-.redessociales {
-  width: 25%;
+.redes-footer {
+  width: 50%;
   margin: auto;
   border-bottom: 3px solid rgba(249, 4, 4, 0.7);
   padding-bottom: 5px;
@@ -217,14 +209,18 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .redessociales img {
-    width: 100%;
-    height: 50px;
-    color: white;
-  }
   .redes {
     padding: 0;
     margin: 0;
+  }
+  .iconos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -254,10 +250,11 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 2em;
+  padding-top: 3em;
 }
 
 .contenedor-nosotros img {
-  width: 80%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,6 +262,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
+  margin-bottom: 2rem;
   text-align: center;
   max-width: 600px;
   border: 1px solid white;
@@ -286,7 +284,7 @@ footer {
   width: 80%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .contenedor-nosotros {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -300,11 +298,20 @@ footer {
             justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
+    padding-top: 0;
+    text-align: center;
+  }
+  .contenedor-nosotros p {
+    line-height: 2rem;
+    width: 80%;
+    text-align: justify;
   }
 }
 
-.contenedor-nosotros p {
-  line-height: 2rem;
+@media (max-width: 768px) {
+  .contenedor-nosotros-main {
+    padding-top: 5rem;
+  }
 }
 
 /* FIN NOSOTROS */
@@ -348,24 +355,27 @@ footer {
 
 /* FIN FORMULARIO */
 /* HOME */
-.inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: cadetblue;
+.contenedor-carousel {
+  width: 100%;
+  margin: auto;
+  padding-top: 6rem;
 }
 
 @media (max-width: 768px) {
-  .contenedor-nosotros-main {
-    padding-top: 5rem;
-  }
   .contenedor-carousel {
     width: 100%;
-    margin: auto;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 8rem;
+    text-align: center;
   }
+}
+
+.mapa-home {
+  margin: auto;
+  margin-bottom: 4rem;
+  width: 80%;
+  height: 100px;
 }
 
 .contenedor-carta-main {
