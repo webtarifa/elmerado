@@ -228,7 +228,8 @@ footer {
 
 .contenedor-nosotros {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding-bottom: 2em;
   padding-top: 3em;
@@ -241,9 +242,8 @@ footer {
   margin-bottom: 2rem;
   text-align: center;
   max-width: 600px;
-  border: 1px solid white;
   border-radius:3px;
-  box-shadow: 0px 1px 08px;
+  
 }
 
 .contenedor-nosotros p {
@@ -325,13 +325,70 @@ footer {
  /* FIN FORMULARIO */
 
  /* HOME */
+ 
+ .principal{
+   width: 100%;
+   height: auto;
+   padding-top: 12rem;
+   text-align: center;  
+   
+ }
+ @media(max-width:768px){
+   .principal{
+     padding-top: 8rem;
+   }
+   
+ }
+ .principal__subtitulo{
+   font-family: 'open sans';
+   text-align: center;
+   color: black;
+   
+ }
+ .principal__imagen{
+   width: 100%;
+   height: auto;
+   border-radius: 20px;
+   
+   
+ }
+ .principal__logo{
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   width:100%;
+   height: auto;
+   background-color: crimson;
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+   
+ }
+ .principal__pie{
+  padding: 2rem;
+  background-color: crimson;
+}
+caption{
+  background-color: crimson;
+}
  .contenedor-carousel{
         width: 100%;
         margin: auto;
-        padding-top: 12rem;
+        padding-top: 4rem;
   }
   .titulo-galeria{
     padding-top: 3rem;
+  }
+  .contenedor-nosotros-inicio{
+    margin-top: 6rem;
+    text-align: center;
+    color: white;
+    background-color: #232323;
+    padding-top: 2rem;
+    border-radius: 20px;
+  }
+  .contenedor-nosotros-inicio p{
+    color: white;
+    text-align: justify;
   }
   @media(max-width:768px){
   
@@ -339,7 +396,7 @@ footer {
     width: 100%;
     height: auto;
     margin:  0 auto;
-    padding-top: 10rem;
+    padding-top: 2rem;
     text-align: center;
   
   }
