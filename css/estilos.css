@@ -769,4 +769,40 @@ p {
     width: 50%;
   }
 }
+
+/* MIXINS */
+.card-1, .card-4 {
+  width: 200px;
+  height: 500px;
+  background-color: crimson;
+  color: white;
+  width: 55%;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 5px 9px black;
+          box-shadow: 1px 5px 9px black;
+}
+
+.card-2 {
+  width: 200px;
+  height: 500px;
+  background-color: crimson;
+  color: white;
+  width: 55%;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 5px 9px black;
+          box-shadow: 1px 5px 9px black;
+}
+
+.card-3 {
+  width: 200px;
+  height: 500px;
+  background-color: crimson;
+  color: white;
+  width: 55%;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 5px 9px black;
+          box-shadow: 1px 5px 9px black;
+}
+
+/* EXTEND */
 /*# sourceMappingURL=estilos.css.map */

@@ -707,4 +707,26 @@ p {
     width: 50%;
   }
 }
-
+/* MIXINS */
+@mixin card{
+  width:200px;
+  height: 500px;
+  background-color:$color-rojo;
+  color: white;
+  width:55%;
+  border-radius: 10px;
+  box-shadow: 1px 5px 9px black;
+}
+.card-1{
+  @include card;
+}
+.card-2{
+  @include card;
+}
+.card-3{
+  @include card;
+}
+/* EXTEND */
+.card-4{
+  @extend .card-1;
+}
