@@ -652,7 +652,29 @@ p {
   object-fit: cover;
   
 }
-
+/* MIXINS */
+@mixin card{
+  width:200px;
+  height: 500px;
+  background-color:$color-rojo;
+  color: white;
+  width:55%;
+  border-radius: 10px;
+  box-shadow: 1px 5px 9px black;
+}
+.card-1{
+  @include card;
+}
+.card-2{
+  @include card;
+}
+.card-3{
+  @include card;
+}
+/* EXTEND */
+.card-4{
+  @extend .card-1;
+}
 
 
 .overlay h2{
@@ -702,31 +724,21 @@ p {
     padding-top: 120px;
   }
   /* fin galeria */
-  .card {
-    background-color: white;
-    width: 50%;
+  @mixin card {
+    background-color: $color-rojo;
+    width: 100%;
+  }
+  .card-1 {
+    @include card;
+  }
+  .card-2 {
+    @include card;
+  }
+  .card-3 {
+    @include card;
+  }
+  .card-4 {
+    @include card;
   }
 }
-/* MIXINS */
-@mixin card{
-  width:200px;
-  height: 500px;
-  background-color:$color-rojo;
-  color: white;
-  width:55%;
-  border-radius: 10px;
-  box-shadow: 1px 5px 9px black;
-}
-.card-1{
-  @include card;
-}
-.card-2{
-  @include card;
-}
-.card-3{
-  @include card;
-}
-/* EXTEND */
-.card-4{
-  @extend .card-1;
-}
+
