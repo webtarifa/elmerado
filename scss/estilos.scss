@@ -255,7 +255,8 @@ footer {
   margin-bottom: 2rem;
   text-align: center;
   max-width: 600px;
-  border-radius:3px;
+  border-radius: 10px;
+  box-shadow: 1px 5px 9px black;
   
 }
 
@@ -278,6 +279,7 @@ footer {
     align-content: center;
     padding-top: 0;
     text-align: center;
+     
     
   }
   
@@ -340,15 +342,19 @@ footer {
  /* HOME */
  
  .principal{
+   background-color: $color-rojo;
    width: 100%;
    height: auto;
    padding-top: 12rem;
    text-align: center;  
+   color: white;
+   font-size: 2rem;
    
  }
  @media(max-width:768px){
    .principal{
      padding-top: 8rem;
+     font-size: 1rem;
    }
    
  }
@@ -360,16 +366,14 @@ footer {
  }
  .principal__imagen{
    width: 100%;
-   height: auto;
-   border-radius: 20px;
-   
-   
+   height: auto; 
  }
+ 
  .principal__logo{
-   width: 100%;
+   width: 300px;
    margin-left: auto;
    margin-right: auto;
-   width:100%;
+   
    height: auto;
    background-color: $color-rojo;
    border-top-right-radius: 20px;
@@ -520,24 +524,18 @@ p {
   color: black;
   
 }
-.carta-fotos img{
-  margin-bottom: 1rem;
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
-}
+
 .carta-fotos{
-  width: 100%;
+  width: 60%;
+  margin: auto;
+  
 }
 @media (max-width: 768px) {
-  .carta {
-    padding-top: 130px;
-    margin-bottom: 1rem;
-  }
-  .carta-fotos img{
+  .carta-fotos {
     width: 100%;
-    height: auto;
     margin-bottom: 1rem;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
   }
+  
   /* FIN CARTA */
   
 .contenedor-inicio {
@@ -643,8 +641,9 @@ p {
   position: relative;
   height:auto;
   margin-bottom:5px;
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+  box-shadow: 1px 5px 9px black;
   margin-top: 1rem;
+  border-radius: 10px;
 }
 .image img{
   width: 100%;
@@ -725,8 +724,8 @@ p {
   }
   /* fin galeria */
   @mixin card {
-    background-color: $color-rojo;
-    width: 100%;
+    
+    width: 90%;
   }
   .card-1 {
     @include card;
@@ -741,4 +740,41 @@ p {
     @include card;
   }
 }
+@mixin carta {
+width:90%;
+margin: 20px auto;
+border-radius: 10px;
+box-shadow: 1px 5px 9px black;
 
+  
+}
+.carta-1{
+  @include carta;
+}
+.carta-2{
+  @include carta;
+}
+.carta-3{
+  @include carta;
+}
+.carta-4{
+  @include carta;
+}
+@mixin column {
+text-align: center;
+margin: auto;
+
+  
+}
+.column-1{
+  @include column;
+}
+.column-2{
+  @include column;
+}
+.column-3{
+  @include column;
+}
+.column-4{
+  @include column;
+}

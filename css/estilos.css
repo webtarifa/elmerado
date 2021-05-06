@@ -301,7 +301,9 @@ footer {
   margin-bottom: 2rem;
   text-align: center;
   max-width: 600px;
-  border-radius: 3px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 5px 9px black;
+          box-shadow: 1px 5px 9px black;
 }
 
 .contenedor-nosotros p {
@@ -389,15 +391,19 @@ footer {
 /* FIN FORMULARIO */
 /* HOME */
 .principal {
+  background-color: crimson;
   width: 100%;
   height: auto;
   padding-top: 12rem;
   text-align: center;
+  color: white;
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {
   .principal {
     padding-top: 8rem;
+    font-size: 1rem;
   }
 }
 
@@ -410,14 +416,12 @@ footer {
 .principal__imagen {
   width: 100%;
   height: auto;
-  border-radius: 20px;
 }
 
 .principal__logo {
-  width: 100%;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
   height: auto;
   background-color: crimson;
   border-top-right-radius: 20px;
@@ -578,27 +582,15 @@ p {
   color: black;
 }
 
-.carta-fotos img {
-  margin-bottom: 1rem;
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
-}
-
 .carta-fotos {
-  width: 100%;
+  width: 60%;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
-  .carta {
-    padding-top: 130px;
-    margin-bottom: 1rem;
-  }
-  .carta-fotos img {
+  .carta-fotos {
     width: 100%;
-    height: auto;
     margin-bottom: 1rem;
-    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
   }
   /* FIN CARTA */
   .contenedor-inicio {
@@ -701,9 +693,10 @@ p {
   position: relative;
   height: auto;
   margin-bottom: 5px;
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 5px 9px black;
+          box-shadow: 1px 5px 9px black;
   margin-top: 1rem;
+  border-radius: 10px;
 }
 
 .image img {
@@ -800,20 +793,68 @@ p {
   }
   /* fin galeria */
   .card-1, .card-4 {
-    background-color: crimson;
-    width: 100%;
+    width: 90%;
   }
   .card-2 {
-    background-color: crimson;
-    width: 100%;
+    width: 90%;
   }
   .card-3 {
-    background-color: crimson;
-    width: 100%;
+    width: 90%;
   }
   .card-4 {
-    background-color: crimson;
-    width: 100%;
+    width: 90%;
   }
+}
+
+.carta-1 {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 5px 9px black;
+          box-shadow: 1px 5px 9px black;
+}
+
+.carta-2 {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 5px 9px black;
+          box-shadow: 1px 5px 9px black;
+}
+
+.carta-3 {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 5px 9px black;
+          box-shadow: 1px 5px 9px black;
+}
+
+.carta-4 {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 5px 9px black;
+          box-shadow: 1px 5px 9px black;
+}
+
+.column-1 {
+  text-align: center;
+  margin: auto;
+}
+
+.column-2 {
+  text-align: center;
+  margin: auto;
+}
+
+.column-3 {
+  text-align: center;
+  margin: auto;
+}
+
+.column-4 {
+  text-align: center;
+  margin: auto;
 }
 /*# sourceMappingURL=estilos.css.map */
