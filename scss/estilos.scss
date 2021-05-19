@@ -279,14 +279,17 @@ footer {
     align-content: center;
     padding-top: 0;
     text-align: center;
-     
+  .contenedor-nosotros p {
+    text-align: left;
+    background-color: aqua;
+  }  
     
   }
   
   .contenedor-nosotros p {
     line-height: 2rem;
     width: 80%;
-    text-align: justify;
+    text-align: center; 
   }
   }
 
@@ -335,7 +338,7 @@ footer {
     
       padding-top: 7em;
     }
-  
+    
  }
  /* FIN FORMULARIO */
 
@@ -373,13 +376,36 @@ footer {
    width: 300px;
    margin-left: auto;
    margin-right: auto;
-   
-   height: auto;
+   position: absolute;
+   top: -300px;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
    background-color: $color-rojo;
-   border-top-right-radius: 20px;
-   border-top-left-radius: 20px;
+   box-shadow: 1px 5px 9px black;
+   border-radius: 20px;
    
  }
+ @media(max-width:768px){
+  .principal__logo{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: -550px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 1px 5px 9px black;
+    border-radius: 2px;
+    opacity: .7;
+    
+    
+  }
+  
+}
  .image:hover  {
    -webkit-transform:scale(1);transform:scale(1);
    
@@ -412,7 +438,7 @@ caption{
   }
   .contenedor-nosotros-inicio p{
     color: white;
-    text-align: justify;
+    text-align: left;
   }
   @media(max-width:768px){
   
@@ -497,6 +523,7 @@ p {
   
   display: flex;
   justify-content: center;
+  color: white;
 }
 .calamares {
   max-width: 300px;
