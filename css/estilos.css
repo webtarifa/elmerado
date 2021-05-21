@@ -680,6 +680,7 @@ p {
   .carta-fotos {
     width: 100%;
     margin-bottom: 1rem;
+    padding-top: 3rem;
   }
   .carta {
     padding-top: 4em;
@@ -1010,7 +1011,7 @@ p {
             box-shadow: 0px 0px 0px;
   }
   .galeri {
-    padding-top: 10em;
+    padding-top: 8em;
   }
 }
 
