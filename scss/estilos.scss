@@ -147,6 +147,7 @@ ul {
 /* FOOTER */
 
 footer {
+  width: 100%;
   background:$color-principal;
   padding: 60px 0 30px 0;
   margin: auto;
@@ -200,6 +201,8 @@ footer {
   color: white;
 }
 .redessociales{
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
 }
@@ -212,6 +215,9 @@ footer {
     display: flex;
     flex-direction: column;
     
+  }
+  footer{
+    width: 100%;
   }
   .redes{
     padding: 0;
@@ -265,6 +271,8 @@ footer {
 }
 
 .contenedor-nos {
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -335,13 +343,11 @@ footer {
     }
     .contenedor-nosotros img{
       margin: 0 auto;
-      margin-top: 10px;
-      
-      
-      
-      
-      
-    }
+      margin-top: 1em;
+      }
+      .contenedor-nosotros{
+        border-radius: 0px;
+      }
   }
 
   /* FIN NOSOTROS */
@@ -376,8 +382,8 @@ footer {
 
 .contenedor-carousel{
     
-    width: 80%;
-    margin: 150px auto;
+    width: 100%;
+    margin: auto;
   }
 .fondo-carousel{
     width: 100%;
@@ -397,13 +403,13 @@ footer {
  /* HOME */
  
  .principal{
-   background-color: $color-rojo;
+   
    width: 100%;
    height: auto;
    padding-top: 10rem;
    text-align: center;  
    color: #ebd800;
-   font-size: 1.5rem;
+   font-size: 1.2rem;
    
  }
  @media(max-width:768px){
@@ -444,7 +450,7 @@ footer {
  
  @media(max-width:768px){
   .principal__logo{
-    width: 100px;
+    width: 130px;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
@@ -454,8 +460,8 @@ footer {
     bottom: 0;
     margin: auto;
     box-shadow: 1px 5px 9px black;
-    border-radius: 2px;
-    opacity: .7;
+    border-radius: 8px;
+    opacity: .8;
     
     
   }
@@ -468,8 +474,8 @@ footer {
 
  .image{overflow:hidden;}
 
- .principal__pie{
-  padding: 2rem;
+ .principal marquee{
+  
   background-color:$color-rojo;
 }
 caption{
@@ -613,7 +619,7 @@ p {
     margin-bottom: 1rem;
   }
  .carta{
-   padding-top: 6em;
+   padding-top: 4em;
  } 
   /* FIN CARTA */
   
@@ -906,8 +912,17 @@ margin: auto;
   .containero{
     width: 100%;
     height: auto;
-    padding: 10px;
-    background-color:$color-principal;
+    padding: 0px;
+    margin: auto;
+    background-color: white;
+    border-radius: 0px;
+    position: relative;
+    box-shadow: 0px 0px 0px;
+
+    
+  }
+  .galeri{
+    padding-top: 8em;
   }
 }
 .containero .card:hover {
@@ -948,4 +963,23 @@ margin: auto;
 }
 strong{
   color: #ebd800;
+}
+.containers{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  
+}
+.imagen_footer{
+  width: 20%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  padding-bottom: 2em;
+}
+@media (max-width:668px){
+  .imagen_footer{
+    width: 70%;
+    padding-bottom: 2em;
+  }
 }
