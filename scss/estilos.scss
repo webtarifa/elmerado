@@ -305,14 +305,17 @@ footer {
 @media (max-width: 768px) {
   .contenedor-nos {
     display: flex;
+    width: 100%;
+    margin: auto;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     padding-top: 15px;
     text-align: center;
+    border-radius: 0;
   .contenedor-nos p {
     text-align: left;
-    background-color: aqua;
+    
   }  
     
   }
@@ -357,7 +360,14 @@ footer {
   font-weight: 300;
   color: black;
 }
-
+.pais{
+  padding-top: 2.3em;
+  padding-left: 4em;
+}
+.terminos{
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 .contenedor-formulario h2 {
   font-family: 'open sans';
   color: black;

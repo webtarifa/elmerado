@@ -364,6 +364,8 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    margin: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -375,10 +377,10 @@ footer {
         align-content: center;
     padding-top: 15px;
     text-align: center;
+    border-radius: 0;
   }
   .contenedor-nos .contenedor-nos p {
     text-align: left;
-    background-color: aqua;
   }
   .contenedor-nos p {
     line-height: 2rem;
@@ -411,6 +413,16 @@ footer {
   margin: 20px 0 15px 0;
   font-weight: 300;
   color: black;
+}
+
+.pais {
+  padding-top: 2.3em;
+  padding-left: 4em;
+}
+
+.terminos {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .contenedor-formulario h2 {
