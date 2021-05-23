@@ -350,7 +350,7 @@ footer {
 
   @media(max-width:768px){
     .contenedor-nosotros-main{
-      padding-top: 10em;
+      padding-top: 8em;
       margin: auto;
       
     }
@@ -704,9 +704,7 @@ p {
 
 
 /* Galeria */
-.galeri{
-  font-family: 'open sans';
-}
+
 
 .galeri h1{
   text-align: center;
@@ -801,6 +799,11 @@ p {
   .contenedor-imagene{
       width: 90%;
   }
+  .galeri {
+    
+    padding-top: 8em;
+
+  }
   .contenedor-imagene .image{
       width: 48%;
   }
@@ -816,9 +819,7 @@ p {
   .contenedor-imagene .image{
       width: 80%;
   }
-  .galeri{
-    padding-top: 120px;
-  }
+  
   /* fin galeria */
   @mixin card {
     
@@ -933,9 +934,7 @@ margin: auto;
 
     
   }
-  .galeri{
-    padding-top: 10em;
-  }
+  
 }
 .containero .card:hover {
   transform: translateY(-15px);
@@ -1064,6 +1063,11 @@ textarea{
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+  }
+  .mapa{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2em;
   }
   .nuestrahistoria img{
     width: 350px;
