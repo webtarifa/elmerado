@@ -62,52 +62,56 @@
         
         <div class="container d-flex justify-content-center contenedor-formulario">
             
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.281024583754!2d-5.606862584381791!3d36.01343031928795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c8ef7f3fb0c9d%3A0x65592a80e3d1db93!2sBar%20El%20Mercado!5e0!3m2!1ses!2ses!4v1617961967187!5m2!1ses!2ses" width="80%" height="300px" style="border:0 ;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.281024583754!2d-5.606862584381791!3d36.01343031928795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c8ef7f3fb0c9d%3A0x65592a80e3d1db93!2sBar%20El%20Mercado!5e0!3m2!1ses!2ses!4v1617961967187!5m2!1ses!2ses" width="80%" height="300px" style="border:0 ;" allowfullscreen="" loading="lazy"></iframe>
         </div>  
         
             <div class="container">
                 <h2>Formulario de contacto</h2>
-                <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-4">
+                <form class="row g-3 needs-validation" novalidate action="https://formspree.io/f/xqkwpvjn"
+                method="POST">
+                  
+                    <div class="col-md-4 nombre">
                       <label for="validationCustom01" class="form-label">Nombre</label>
                       <input type="text" class="form-control" id="validationCustom01" value="" required>
                       <div class="valid-feedback">
-                        Looks good!
+                       
                       </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 apellidos">
                       <label for="validationCustom02" class="form-label">apellidos</label>
                       <input type="text" class="form-control" id="validationCustom02" value="" required>
                       <div class="valid-feedback">
-                        Looks good!
+                       
                       </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 email">
                       <label for="validationCustomUsername" class="form-label">Email</label>
                       <div class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
                         <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                         <div class="invalid-feedback">
-                          Por favor un nombre.
+                         
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 ciudad">
                       <label for="validationCustom03" class="form-label">Ciudad</label>
                       <input type="text" class="form-control" id="validationCustom03" required>
                       <div class="invalid-feedback">
-                        Please provide a valid city.
+                       
                       </div>
                     </div>
-                    <div class="col-md-3 pais" >
-                      <label for="validationCustom04" class="form-label">Pais</label>
-                      <select class="form-select" id="validationCustom04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
-                      </select>
+                    
+                      
                       <div class="invalid-feedback">
-                        Please select a valid state.
+                       
                       </div>
+                    </div>
+                    <div class="col-md-6 d-flex mensaje">
+                      <label class="mensaje">
+                        Tu mensaje:
+                        <textarea name="message"></textarea>
+                      </label>
                     </div>
                     
                     </div>
@@ -118,11 +122,11 @@
                           Aceptar los terminos y condiciones
                         </label>
                         <div class="invalid-feedback">
-                          You must agree before submitting.
+                          
                         </div>
                       </div>
                     </div>
-                    <div class=" container col-md12">
+                    <div class=" container col-md12 enviar">
                       <button class="btn btn-primary" type="submit">Enviar</button>
                     </div>
                 </div>
@@ -156,7 +160,7 @@
             </div>
             <div class="content-foo">
                 <h4>Email</h4>
-                <p>barelmercadotarifa@gmail.com</p>
+                <p>jaimebarmercado@gmail.com</p>
             </div>
             <div class="content-foo">
                 <h4>Localizacion</h4>
@@ -165,7 +169,7 @@
              
         </div>
         
-        <h2 class="titulo-final">&copy; Juan Fdez | Diseño & Desarrollo web</h2>
+        <h2 class="titulo-final">&copy;<a href="https://webtarifa.webflow.io/">Juan Fdez | Diseño & Desarrollo web</a> </h2>
         
     </footer> 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

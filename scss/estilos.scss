@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 @import "_colors.scss";
 @import "_tipo.scss";
@@ -16,7 +17,14 @@ body {
   background-color: white;
   
 }
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+h1, h2,h3,h4{
+  font-family: Arial, Helvetica, sans-serif;
 
+}
 /* CABECERA */
 .fondo-logo {
   margin: auto;
@@ -198,7 +206,13 @@ footer {
   text-align: center;
   font-size: 16px;
   margin: 20px 0 0 0;
+  color: $color-rojo;
   color: white;
+  
+}
+.titulo-final a:hover{
+  color: crimson;
+  text-decoration: none;
 }
 .redessociales{
   width: 100%;
@@ -236,6 +250,7 @@ footer {
 /* NOSOTROS */
 .contenedor-nosotros-main{
   padding-top: 14rem;
+  
 }
 .contenedor-nosotros-main h1{
   text-align: center;
@@ -244,22 +259,21 @@ footer {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  background-color: $color-principal;
+  
   border-radius: 8px;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 10rem;
-  box-shadow: 1px 5px 9px black;
+  
 }
 .contenedor-nosotros img{
   width: 100%;
   border-radius: 8px;
-  border: 1px solid #ebd800;
+  border: 1px solid $color-rojo;
   margin: 20px;
-  box-shadow: 1px 5px 9px black;
+  box-shadow: 1px 5px 9px $color-principal;
 }
 .contenedor-nosotros p{
-  color: white;
+  
   padding: 40px;
 }
 .contenedor-nos-main h1 {
@@ -279,9 +293,8 @@ footer {
   align-items: center;
   padding-bottom: 3em;
   padding-top: 3em;
-  background-color: crimson;
-  border-radius: 10px;
-  box-shadow: 1px 5px 9px black;
+  background-color: $color-principal;
+  
   
 }
 .contenedor-nos img {
@@ -294,7 +307,7 @@ footer {
   max-width: 600px;
   border: 1px solid #ebd800;
   border-radius: 10px;
-  box-shadow: 1px 5px 9px black;
+  box-shadow: 1px 5px 9px $color-principal;
   
 }
 
@@ -305,7 +318,7 @@ footer {
   text-align: center;
   padding: 1em;
   line-height: 25px;
-  color: black;
+  color: $color-principal;
 }
 .linea{
   width: 80%;
@@ -364,7 +377,7 @@ footer {
   text-align: center;
   margin:20px 0 15px 0;
   font-weight: 300;
-  color: black;
+  color: $color-principal;
 }
 .pais{
   padding-top: 2.3em;
@@ -376,7 +389,7 @@ footer {
 }
 .contenedor-formulario h2 {
   font-family: 'open sans';
-  color: black;
+  color: $color-principal;
   font-family: 'open sans';
 }
 
@@ -422,7 +435,7 @@ footer {
  .principal__subtitulo{
    font-family: 'open sans';
    text-align: center;
-   color: black;
+   color: $color-principal;
    
  }
  .principal__imagen{
@@ -441,7 +454,7 @@ footer {
    bottom: 0;
    margin: auto;
    background-color: $color-principal;
-   box-shadow: 1px 5px 9px black;
+   box-shadow: 1px 5px 9px $color-principal;
    border-radius: 20px;
    border: 1px solid #ebd800;
    opacity: .6;
@@ -459,7 +472,7 @@ footer {
     right: 0;
     bottom: 0;
     margin: auto;
-    box-shadow: 1px 5px 9px black;
+    box-shadow: 1px 5px 9px $color-principal;
     border-radius: 8px;
     opacity: .8;
     
@@ -556,11 +569,7 @@ caption{
 
 
 
-h2 {
-  text-align: left;
-  color: $color-rojo;
-  padding: 50px 0px 40px 0px;
-}
+
 .titulos-cabecera {
   text-align: center;
   padding-bottom: 20px;
@@ -604,7 +613,7 @@ p {
   text-align: center;
   
   font-weight: 300;
-  color: black;
+  color: $color-principal
   
 }
 
@@ -685,8 +694,10 @@ p {
   color: white;
   display: block;
 }
-.mapa h2{
-  color: white;
+.mapa {
+  margin: 3rem;
+  border-radius: 8px;
+  
 }
 
 
@@ -701,7 +712,7 @@ p {
   text-align: center;
   margin:20px 0 15px 0;
   font-weight: 300;
-  color: black;
+  color: $color-principal;
 }
 
 .linea{
@@ -727,7 +738,7 @@ p {
   position: relative;
   height:auto;
   margin-bottom:5px;
-  box-shadow: 1px 5px 9px black;
+  box-shadow: 1px 5px 9px $color-principal;
   margin-top: 1rem;
   border-radius: 10px;
 }
@@ -745,7 +756,7 @@ p {
   color: white;
   width:55%;
   border-radius: 10px;
-  box-shadow: 1px 5px 9px black;
+  box-shadow: 1px 5px 9px $color-principal;
 }
 .card-1{
   @include card;
@@ -830,7 +841,7 @@ p {
 width:90%;
 margin: 20px auto;
 border-radius: 10px;
-box-shadow: 1px 5px 9px black;
+box-shadow: 1px 5px 9px $color-principal;
 
   
 }
@@ -880,7 +891,7 @@ margin: auto;
 .containero {
   width: 100%;
   background-color: $color-principal;
-  max-width: 1200px;
+  
   height: 470px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -890,16 +901,16 @@ margin: auto;
   flex-pack: center;
   justify-content: center;
   margin: auto;
-  border-radius: 8px;
+  
   position: relative;
-  box-shadow: 1px 5px 9px black;
+  box-shadow: 1px 5px 9px $color-principal;
   
 }
 
 .containero .card {
   width: 330px;
   height: 430px;
-  background-color: crimson;
+  background-color: $color-rojo;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -940,8 +951,9 @@ margin: auto;
 
 .containero .card h4 {
   padding-top: 20px;
-  font-weight: 600;
-  color: $color-principal;
+  font-weight: 400;
+  
+  color: white;
 }
 
 .containero .card p {
@@ -963,7 +975,8 @@ margin: auto;
   
 }
 strong{
-  color: #ebd800;
+  color: $color-rojo;
+  font-weight: 900;
 }
 .containers{
   width: 100%;
@@ -983,4 +996,88 @@ strong{
     width: 70%;
     padding-bottom: 2em;
   }
+}
+.mensaje{
+  width: 100%;
+  max-width: 1100px;
+  
+  margin: auto;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+textarea{
+  margin-top:  10px;
+  width: 100%;
+  height: 200px;
+ 
+}
+
+@media(max-width:668px){
+  .mensaje{
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+.ciudad, .apellidos, .email, .nombre{
+  padding-top: 20px;
+}
+
+.btn-primary {
+  background-color:$color-rojo;
+}
+.nuestrahistoria{
+  padding-top: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.nuestrahistoria img{
+  width: 400px;
+  height: auto;
+  
+  border-radius: 10px;
+  border-radius: 8px;
+  border: 1px solid $color-rojo;
+  margin: 20px;
+  box-shadow: 1px 5px 9px black;
+}
+.nuestrahistoria p{
+  padding-top: 40px;
+  padding-left: 200px;
+  padding-right: 150px;
+  vertical-align: center;
+}
+.historia h2{
+  margin-top: 9rem;
+  text-align: center;
+  font-size: 2.4rem;
+}
+@media (max-width:668px){
+  .nuestrahistoria{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  .nuestrahistoria img{
+    width: 350px;
+    margin: auto;
+  }
+  .nuestrahistoria p{
+    padding: 2.5em;
+    padding-top: .5em;
+    margin: 0;
+  }
+  .historia h2{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
 }

@@ -26,6 +26,15 @@ body {
   background-color: white;
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* CABECERA */
 .fondo-logo {
   margin: auto;
@@ -216,7 +225,13 @@ footer {
   text-align: center;
   font-size: 16px;
   margin: 20px 0 0 0;
+  color: crimson;
   color: white;
+}
+
+.titulo-final a:hover {
+  color: crimson;
+  text-decoration: none;
 }
 
 .redessociales {
@@ -278,7 +293,6 @@ footer {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  background-color: #232323;
   border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,22 +300,18 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-bottom: 10rem;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
 }
 
 .contenedor-nosotros img {
   width: 100%;
   border-radius: 8px;
-  border: 1px solid #ebd800;
+  border: 1px solid crimson;
   margin: 20px;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
 }
 
 .contenedor-nosotros p {
-  color: white;
   padding: 40px;
 }
 
@@ -331,10 +341,7 @@ footer {
           align-items: center;
   padding-bottom: 3em;
   padding-top: 3em;
-  background-color: crimson;
-  border-radius: 10px;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  background-color: #232323;
 }
 
 .contenedor-nos img {
@@ -350,8 +357,8 @@ footer {
   max-width: 600px;
   border: 1px solid #ebd800;
   border-radius: 10px;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
 }
 
 .contenedor-nos p {
@@ -360,7 +367,7 @@ footer {
   text-align: center;
   padding: 1em;
   line-height: 25px;
-  color: black;
+  color: #232323;
 }
 
 .linea {
@@ -423,7 +430,7 @@ footer {
   text-align: center;
   margin: 20px 0 15px 0;
   font-weight: 300;
-  color: black;
+  color: #232323;
 }
 
 .pais {
@@ -438,7 +445,7 @@ footer {
 
 .contenedor-formulario h2 {
   font-family: 'open sans';
-  color: black;
+  color: #232323;
   font-family: 'open sans';
 }
 
@@ -481,7 +488,7 @@ footer {
 .principal__subtitulo {
   font-family: 'open sans';
   text-align: center;
-  color: black;
+  color: #232323;
 }
 
 .principal__imagen {
@@ -500,8 +507,8 @@ footer {
   bottom: 0;
   margin: auto;
   background-color: #232323;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
   border-radius: 20px;
   border: 1px solid #ebd800;
   opacity: .6;
@@ -518,8 +525,8 @@ footer {
     right: 0;
     bottom: 0;
     margin: auto;
-    -webkit-box-shadow: 1px 5px 9px black;
-            box-shadow: 1px 5px 9px black;
+    -webkit-box-shadow: 1px 5px 9px #232323;
+            box-shadow: 1px 5px 9px #232323;
     border-radius: 8px;
     opacity: .8;
   }
@@ -612,12 +619,6 @@ caption {
   text-align: justify;
 }
 
-h2 {
-  text-align: left;
-  color: crimson;
-  padding: 50px 0px 40px 0px;
-}
-
 .titulos-cabecera {
   text-align: center;
   padding-bottom: 20px;
@@ -668,7 +669,7 @@ p {
   padding-top: 200px;
   text-align: center;
   font-weight: 300;
-  color: black;
+  color: #232323;
 }
 
 .carta-fotos {
@@ -745,8 +746,9 @@ p {
   display: block;
 }
 
-.mapa h2 {
-  color: white;
+.mapa {
+  margin: 3rem;
+  border-radius: 8px;
 }
 
 /* Galeria */
@@ -758,7 +760,7 @@ p {
   text-align: center;
   margin: 20px 0 15px 0;
   font-weight: 300;
-  color: black;
+  color: #232323;
 }
 
 .linea {
@@ -786,8 +788,8 @@ p {
   position: relative;
   height: auto;
   margin-bottom: 5px;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
   margin-top: 1rem;
   border-radius: 10px;
 }
@@ -807,8 +809,8 @@ p {
   color: white;
   width: 55%;
   border-radius: 10px;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
 }
 
 .card-2 {
@@ -818,8 +820,8 @@ p {
   color: white;
   width: 55%;
   border-radius: 10px;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
 }
 
 .card-3 {
@@ -829,8 +831,8 @@ p {
   color: white;
   width: 55%;
   border-radius: 10px;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
 }
 
 /* EXTEND */
@@ -903,32 +905,32 @@ p {
   width: 90%;
   margin: 20px auto;
   border-radius: 10px;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
 }
 
 .carta-2 {
   width: 90%;
   margin: 20px auto;
   border-radius: 10px;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
 }
 
 .carta-3 {
   width: 90%;
   margin: 20px auto;
   border-radius: 10px;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
 }
 
 .carta-4 {
   width: 90%;
   margin: 20px auto;
   border-radius: 10px;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
 }
 
 .column-1 {
@@ -963,7 +965,6 @@ p {
 .containero {
   width: 100%;
   background-color: #232323;
-  max-width: 1200px;
   height: 470px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -976,10 +977,9 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  border-radius: 8px;
   position: relative;
-  -webkit-box-shadow: 1px 5px 9px black;
-          box-shadow: 1px 5px 9px black;
+  -webkit-box-shadow: 1px 5px 9px #232323;
+          box-shadow: 1px 5px 9px #232323;
 }
 
 .containero .card {
@@ -1031,8 +1031,8 @@ p {
 
 .containero .card h4 {
   padding-top: 20px;
-  font-weight: 600;
-  color: #232323;
+  font-weight: 400;
+  color: white;
 }
 
 .containero .card p {
@@ -1055,7 +1055,8 @@ p {
 }
 
 strong {
-  color: #ebd800;
+  color: crimson;
+  font-weight: 900;
 }
 
 .containers {
@@ -1078,6 +1079,110 @@ strong {
   .imagen_footer {
     width: 70%;
     padding-bottom: 2em;
+  }
+}
+
+.mensaje {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+@media (max-width: 668px) {
+  .mensaje {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+.ciudad, .apellidos, .email, .nombre {
+  padding-top: 20px;
+}
+
+.btn-primary {
+  background-color: crimson;
+}
+
+.nuestrahistoria {
+  padding-top: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nuestrahistoria img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  border-radius: 8px;
+  border: 1px solid crimson;
+  margin: 20px;
+  -webkit-box-shadow: 1px 5px 9px black;
+          box-shadow: 1px 5px 9px black;
+}
+
+.nuestrahistoria p {
+  padding-top: 40px;
+  padding-left: 200px;
+  padding-right: 150px;
+  vertical-align: center;
+}
+
+.historia h2 {
+  margin-top: 9rem;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+@media (max-width: 668px) {
+  .nuestrahistoria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  .nuestrahistoria img {
+    width: 350px;
+    margin: auto;
+  }
+  .nuestrahistoria p {
+    padding: 2.5em;
+    padding-top: .5em;
+    margin: 0;
+  }
+  .historia h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
